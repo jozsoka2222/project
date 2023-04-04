@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wordpress-config-map
+  namespace: wordpress
+data:
+  WORDPRESS_DB_HOST: 172.20.0.3
+  WORDPRESS_DB_USER: mysql-wordpress
+  WORDPRESS_DB_PASSWORD: mysql-wordpress-password
